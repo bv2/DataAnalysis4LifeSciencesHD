@@ -3,7 +3,7 @@ This repository contains all material for the course on Data Analysis for Life S
 
 
 ## Literature
-The course mainly follows the chapters 1-9 of the book Data Analysis for Life Science by Rafael Irizarry and Mike Love. A free pdf version can be obtained [here](https://leanpub.com/dataanalysisforthelifesciences).
+The course mainly follows the chapters the book Data Analysis for Life Science by Rafael Irizarry and Mike Love. A free pdf version can be obtained [here](https://leanpub.com/dataanalysisforthelifesciences).
 
 ## Course agenda
 The course consists of 15 days, where each day goes through parts of the Data Analysis for Life Science, accompanied by YouTube lectures of the authors and exercises to be solved. Please click on the respective day to go to the material relevant for each day.
