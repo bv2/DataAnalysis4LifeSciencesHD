@@ -1,10 +1,6 @@
 # Data Analysis for Life Sciences 
 This repository contains all material for the course on Data Analysis for Life Sciences taught as a virtual class by Wolfgang Huber and Britta Velten at Heidelberg university in the summer semester 2020. The course is directly based on the material by Rafael Irizarry, Mike Love and further contributors that was assembled at their [webpage](https://rafalab.github.io/pages/harvardx.html)
 
-
-## Literature
-The course mainly follows the chapters the book Data Analysis for Life Science by Rafael Irizarry and Mike Love. A free pdf version can be obtained [here](https://leanpub.com/dataanalysisforthelifesciences).
-
 ## Course agenda
 The course consists of 15 days, where each day goes through parts of the Data Analysis for Life Science, accompanied by YouTube lectures of the authors and exercises to be solved. Please click on the respective day to go to the material relevant for each day.
 
@@ -35,6 +31,9 @@ The course consists of 15 days, where each day goes through parts of the Data An
 * [Day 13](day13/) : TBD
 * [Day 14](day14/) : TBD (DESeq pipeline, journal club, project presentations)
 
+## Literature
+The course mainly follows the chapters the book Data Analysis for Life Science by Rafael Irizarry and Mike Love. A free pdf version can be obtained [here](https://leanpub.com/dataanalysisforthelifesciences). In the pdf version you will also find links to Rmd-Documents that were used to generate the book and can be used to directly re-run and experiment with the code.
+
 ## Q&A Sessions
 Q&A Sessions will take place every Monday and Thursday from 10-11am.
 Details will be announced via Slack.
@@ -42,5 +41,5 @@ Details will be announced via Slack.
 ## Course Slack channel
 All discussions, announcemnet and Q&A sessions of the course will be communicaed via a Slack channel. This is also a place to discuss and exchange among participants. In case you are not yet in the Slack channel, please write an e-mail to Britta Velten `b.velten@dkfz-heidelberg.de`.
 
-## Course evaluation
+## Exercises and course evaluation
 TBD
