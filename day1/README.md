@@ -18,4 +18,4 @@ For this you can follow these lectures and corresponding scripts from the book:
 
 - [Getting Started](http://genomicsclass.github.io/book/pages/getting_started_exercises.html)
 - [dpylr introduction](http://genomicsclass.github.io/book/pages/dplyr_intro_exercises.html)
-
+Note that in the dplyr exercise the url is missing. This should be [https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/msleep_ggplot2.csv](https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/msleep_ggplot2.csv).
