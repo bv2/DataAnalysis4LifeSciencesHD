@@ -10,6 +10,7 @@ Today we will learn about matrix algebra which will be important for understandi
 - Examples [lecture](https://www.youtube.com/watch?v=FAP7fYbZF0Y)
 - Matrix Algebra in Practice I [lecture](https://www.youtube.com/watch?v=LniqeWOfTQo)
 - Matrix Algebra in Practice II [lecture](https://www.youtube.com/watch?v=eRXzsXh78rE)
+- Standard Errors [lecture](https://www.youtube.com/watch?v=9rm-y_iYbnw)  [script](http://genomicsclass.github.io/book/pages/standard_errors.html)
 
 
 ## Exercises:
@@ -18,3 +19,4 @@ Today we will learn about matrix algebra which will be important for understandi
 -   [Matrix notation exercises](http://genomicsclass.github.io/book/pages/matrix_notation_exercises.html)
 -   [Matrix operations exercises](http://genomicsclass.github.io/book/pages/matrix_operations_exercises.html)
 -   [Matrix algebra examples exercises](http://genomicsclass.github.io/book/pages/matrix_algebra_examples_exercises.html)
+-   [Standard errors exercises](http://genomicsclass.github.io/book/pages/standard_errors_exercises.html)

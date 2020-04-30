@@ -9,11 +9,8 @@ For this you can follow these lectures and corresponding scripts from the book:
 - Linear Models in Practice I [lecture](https://www.youtube.com/watch?v=xCdSyc3K3Ew)  [script](http://genomicsclass.github.io/book/pages/linear_models_in_practice.html)
 - Linear Models in Practice II [lecture](https://www.youtube.com/watch?v=Opa8i0QxKCo)  [script](http://genomicsclass.github.io/book/pages/linear_models_in_practice.html)
  - Fitting Linear Models and Testing [lecture](https://www.youtube.com/watch?v=TSOzvcAgV70)  [script](http://genomicsclass.github.io/book/pages/linear_models_in_practice.html)
-???
-- Standard Errors [lecture](https://www.youtube.com/watch?v=9rm-y_iYbnw)  [script](http://genomicsclass.github.io/book/pages/standard_errors.html)
 
 ## Exercises:
 -   [Linear models introduction exercises](http://genomicsclass.github.io/book/pages/linear_models_intro_exercises.html)
 -   [Expressing design formula exercises](http://genomicsclass.github.io/book/pages/expressing_design_formula_exercises.html)
 -   [Linear models in practice exercises](http://genomicsclass.github.io/book/pages/linear_models_in_practice_exercises.html)
--   [Standard errors exercises](http://genomicsclass.github.io/book/pages/standard_errors_exercises.html)
