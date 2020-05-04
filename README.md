@@ -2,7 +2,7 @@
 This repository contains all material for the course on Data Analysis for Life Sciences taught as a virtual class by Wolfgang Huber and Britta Velten at Heidelberg university in the summer semester 2020. The course is directly based on the material by Rafael Irizarry, Mike Love and further contributors that was assembled at their [webpage](https://rafalab.github.io/pages/harvardx.html)
 
 ## Course agenda
-The course consists of 15 days, where each day goes through parts of the Data Analysis for Life Science, accompanied by YouTube lectures of the authors and exercises to be solved. Please click on the respective day to go to the material relevant for each day.
+The course consists of 14 days, where each day goes through parts of the Data Analysis for Life Science, accompanied by YouTube lectures of the authors and exercises to be solved. Please click on the respective day to go to the material relevant for each day.
 
 * [Day 1](day1/) :  Getting started with R and GitHub and basic data wrangling
 * [Day 2](day2/) : Probability theory I: Random variables, central limit theorem and t-tests 
