@@ -8,20 +8,20 @@ The course mainly follows the chapters the book *Data Analysis for Life Science*
 ## Course agenda
 The course consists of 14 days, where each day covers parts of the book Data Analysis for Life Science, accompanied by YouTube lectures of the authors and exercises to be solved. Please click on the respective day to go to the material relevant for each day.
 
-* [Day 1 (18/05)](day1/) :  Getting started with R and GitHub and basic data wrangling
-* [Day 2 (19/05)](day2/) : Probability theory I: Random variables, central limit theorem and t-tests 
-* [Day 3 (20/05)](day3/) : Probability theory II: Inference
-* [Day 4 (22/05)](day4/) : Exploratory Data Analysis and Robust Statistics
-* [Day 5 (25/05)](day5/) : Matrices and matrix algebra
-* [Day 6 (26/05)](day6/) : Linear Models I - introduction
-* [Day 7 (27/05)](day7/) : Linear Models II - Modelling interactions
-* [Day 8 (28/05)](day8/) : Multiple testing
-* [Day 9 (29/05)](day9/) : Statistical Models and Bayesian Analysis 
-* [Day 10 (01/06)](day10/) :  Distances & Dimension reduction using PCA
-* [Day 11 (02/06)](day11/) : Clustering and Machine Learning I 
-* [Day 12 (03/06)](day12/) : Clustering and Machine Learning II
-* [Day 13 (04/06)](day13/) : Batch effects
-* [Day 14 (05/06)](day14/) : Wrap-up and projects
+* [Day 1 (18/05)](material/day1/) :  Getting started with R and GitHub and basic data wrangling
+* [Day 2 (19/05)](material/day2/) : Probability theory I: Random variables, central limit theorem and t-tests 
+* [Day 3 (20/05)](material/day3/) : Probability theory II: Inference
+* [Day 4 (22/05)](material/day4/) : Exploratory Data Analysis and Robust Statistics
+* [Day 5 (25/05)](material/day5/) : Matrices and matrix algebra
+* [Day 6 (26/05)](material/day6/) : Linear Models I - introduction
+* [Day 7 (27/05)](material/day7/) : Linear Models II - Modelling interactions
+* [Day 8 (28/05)](material/day8/) : Multiple testing
+* [Day 9 (29/05)](material/day9/) : Statistical Models and Bayesian Analysis 
+* [Day 10 (01/06)](material/day10/) :  Distances & Dimension reduction using PCA
+* [Day 11 (02/06)](material/day11/) : Clustering and Machine Learning I 
+* [Day 12 (03/06)](material/day12/) : Clustering and Machine Learning II
+* [Day 13 (04/06)](material/day13/) : Batch effects
+* [Day 14 (05/06)](material/day14/) : Wrap-up and projects
 
 
 ## Course Slack channel
