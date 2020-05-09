@@ -3,7 +3,7 @@
 Let's get started!
 Today we will go through the first chapter of the book and get set up for the course.
 
-For this you can follow these lectures and corresponding scripts from the book:
+For this you can follow these lectures and corresponding scripts from the book Data Analysis for Life Science:
 
 - Getting Started with R [lecture](https://www.youtube.com/watch?v=p8F_wreHTzw) [script](http://genomicsclass.github.io/book/pages/getting_started.html)
 - GitHub [lecture](https://www.youtube.com/watch?v=HSXwLm6txoo)
