@@ -1,22 +1,17 @@
 # Day 10
 
-Today we will learn how to visualize and analyse a high-dimensional data set by finding a suitable low-dimensional representation of the data.
-For this you can follow these lectures and corresponding scripts from the book:
+Today we will go more into details on analysing RNAseq data using the concepts of statistical modelling and testing that we have learnt in the previous days. For this we will move away from the book *Data Analysis for Life Sciences* for today and look into Chapter 8 of [*Modern Statistics for Modern Biology*](https://www.huber.embl.de/msmb/index.html). In the lab we will make use of the [Bioconductor package DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) to analyse the RNAseq data starting from count data.
 
-- Introduction [lecture](https://www.youtube.com/watch?v=sBgMdGUTYWY)
-- Distance [lecture](https://www.youtube.com/watch?v=QYlggeDGLmc)  [script](http://genomicsclass.github.io/book/pages/distance.html)
-- Distance (in practice) [lecture](https://www.youtube.com/watch?v=B0MFoHr23u8)  [script](http://genomicsclass.github.io/book/pages/distance.html)
-- Distance Reduction Motivation [lecture](https://www.youtube.com/watch?v=uu964pCDGaw)  [script](http://genomicsclass.github.io/book/pages/distance.html)
-- Projections [lecture](https://www.youtube.com/watch?v=yPecNb3-UXw)  [script](http://genomicsclass.github.io/book/pages/projections.html)
-- Rotations [lecture](https://www.youtube.com/watch?v=QYbeZXKQsCc)  [script](http://genomicsclass.github.io/book/pages/rotations.html)
-- SVD [lecture](https://www.youtube.com/watch?v=5K-h9eOilsg)  [script](http://genomicsclass.github.io/book/pages/svd.html)
-- MDS [lecture](https://www.youtube.com/watch?v=RKncuSbrF_o)  [script](https://github.com/genomicsclass/labs/blob/master/highdim/mds.Rmd)
-- PCA [lecture](https://www.youtube.com/watch?v=-bbLn9tv7i8)  [script](http://genomicsclass.github.io/book/pages/pca_motivation.html)
+Before starting with the exercises please go through Chapter 8 of Modern Statistics for Modern Biology and the accompanying lecture (Lecture 7: RNA-seq and linear models) provided along with the book [here](https://www.huber.embl.de/msmb/course_spring_2020/lectures.html) using the following links:
 
+* [MSMB - Chapter 8](https://www.huber.embl.de/msmb/Chap-CountData.html)
+* [slides](https://www.huber.embl.de/msmb/course_spring_2020/Slides/Lec07-RNASeq/Lec08-RNASeq.pdf)
+ * [lecture](https://www.huber.embl.de/msmb/video/Lect07-5sec/Lect07-RNAseq.mp4) 
 
 
 ## Exercises:
 
--   [Distance exercises](http://genomicsclass.github.io/book/pages/distance_exercises.html)
--   [SVD exercises](http://genomicsclass.github.io/book/pages/svd_exercises.html)
--   [MDS exercises](http://genomicsclass.github.io/book/pages/mds_exercises.html)
+-   [RNAseq analysis](https://www.huber.embl.de/msmb/course_spring_2020/Lab06_testing_RNAseq.html)
+
+
+

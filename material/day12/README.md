@@ -1,19 +1,19 @@
 # Day 12
 
-Today we will learn about basic concepts of Machine Learning.
+Today we will learn about clustering methods.
 For this you can follow these lectures and corresponding scripts from the book:
 
-- Conditional Expectations [lecture](https://www.youtube.com/watch?v=EzGuqhf5XJU)  [script](http://genomicsclass.github.io/book/pages/conditional_expectation.html)
-- Example: Linear Regression [lecture](https://www.youtube.com/watch?v=hRFYRsWJr3k)  [script](http://genomicsclass.github.io/book/pages/conditional_expectation.html)
-- Smoothing [lecture](https://www.youtube.com/watch?v=6n0a0H24aJ8)  [script](http://genomicsclass.github.io/book/pages/smoothing.html)
-- K-Nearest Neighbors [lecture](https://www.youtube.com/watch?v=bNa9kGXFP2s)  [script](http://genomicsclass.github.io/book/pages/smoothing.html)
-- Cross Validation [lecture](https://www.youtube.com/watch?v=5Oxd690dd_0)  [script](http://genomicsclass.github.io/book/pages/crossvalidation.html)
-
+- Clustering [lecture](https://www.youtube.com/watch?v=NqH8kUfsFGc)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)
+ - How Randomness Affects Clustering
+[lecture](https://www.youtube.com/watch?v=waqcU-Lxc-I)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)
+- Hiearchichal Clustering in R [lecture](https://www.youtube.com/watch?v=3OB4_th9UsA)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)
+- K-Means [lecture](https://www.youtube.com/watch?v=pBYANQH9lLc)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)
+- K-Means Clustering in R [lecture](https://www.youtube.com/watch?v=4qODn72BvTo)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)
+- Heat Maps in R [lecture](https://www.youtube.com/watch?v=Ffu-Bt_VDEs)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)
+- Gene Clustering [lecture](https://www.youtube.com/watch?v=yMubXDjw4Bw)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)
 
 
 ## Exercises:
 
+-   [Clustering and heatmaps exercises](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps_exercises.html)
 
--   [Conditional expectation exercises](http://genomicsclass.github.io/book/pages/conditional_expectation_exercises.html)
--   [Smoothing exercises](http://genomicsclass.github.io/book/pages/smoothing_exercises.html)
--   [Crossvalidation exercises](http://genomicsclass.github.io/book/pages/crossvalidation_exercises.html)
