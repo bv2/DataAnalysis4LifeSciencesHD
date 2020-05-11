@@ -1,5 +1,5 @@
 # Data Analysis for Life Sciences 
-This repository contains the material for the course on Data Analysis for Life Sciences taught as a virtual class by [Wolfgang Huber](https://www.huber.embl.de) and [Britta Velten](https://github.com/bv2) at Heidelberg university in the summer semester 2020. The course is directly based on the material by Rafael Irizarry, Mike Love and further contributors that was assembled at their [webpage](https://rafalab.github.io/pages/harvardx.html).
+This repository contains the material for the course on Data Analysis for Life Sciences taught as a virtual class by [Wolfgang Huber](https://www.huber.embl.de) and [Britta Velten](https://github.com/bv2) at Heidelberg university in the summer semester 2020. The course is mainly based on the material by Rafael Irizarry, Mike Love and further contributors that was assembled at their [webpage](https://rafalab.github.io/pages/harvardx.html).
 
 ## Literature
 The course mainly follows the chapters of the book *Data Analysis for Life Science* by Rafael Irizarry and Mike Love. A free pdf version can be obtained [here](https://leanpub.com/dataanalysisforthelifesciences). (You can move the slider to 0$ to get a free copy). In the pdf version you will find links to Rmd-Documents that were used to generate the book and can be used to directly re-run and experiment with the code.
