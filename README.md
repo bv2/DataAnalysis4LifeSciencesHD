@@ -17,10 +17,10 @@ The course consists of 14 days, where each day covers parts of the book Data Ana
 * [Day 7 (27/05)](material/day7/) : Linear Models II - Modelling interactions
 * [Day 8 (28/05)](material/day8/) : Multiple testing
 * [Day 9 (29/05)](material/day9/) : Statistical Models and Bayesian Analysis 
-* [Day 10 (29/05)](material/day10/) : RNAseq analysis
-* [Day 11 (01/06)](material/day11/) :  Distances & Dimension reduction using PCA
-* [Day 12 (02/06)](material/day12/) : Clustering and Machine Learning I 
-* [Day 13 (03/06)](material/day13/) : Clustering and Machine Learning II
+* [Day 10 (01/06)](material/day10/) : RNAseq analysis
+* [Day 11 (02/06)](material/day11/) :  Distances & Dimension reduction using PCA
+* [Day 12 (03/06)](material/day12/) : Clustering and Machine Learning I 
+* [Day 13 (04/06)](material/day13/) : Clustering and Machine Learning II
 * [Day 14 (05/06)](material/day14/) : Wrap-up and projects
 
 
