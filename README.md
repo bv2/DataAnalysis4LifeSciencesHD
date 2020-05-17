@@ -6,7 +6,7 @@ The course mainly follows the chapters of the book *Data Analysis for Life Scien
 
 
 ## Course agenda
-The course consists of 14 days, where each day covers parts of the book Data Analysis for Life Science, accompanied by YouTube lectures of the authors and exercises to be solved. Please click on the respective day to go to the material relevant for each day.
+The course consists of 13 days plus a personal data analysis project, where each day covers parts of the book *Data Analysis for Life Science*, accompanied by YouTube lectures of the authors and exercises to be solved. Please click on the respective day to go to the material relevant for each day.
 
 * [Day 1 (18/05)](material/day1/) :  Getting started with R and GitHub and basic data wrangling
 * [Day 2 (19/05)](material/day2/) : Probability theory I: Random variables, central limit theorem and t-tests 
@@ -17,11 +17,10 @@ The course consists of 14 days, where each day covers parts of the book Data Ana
 * [Day 7 (27/05)](material/day7/) : Linear Models II - Modelling interactions
 * [Day 8 (28/05)](material/day8/) : Multiple testing
 * [Day 9 (29/05)](material/day9/) : Statistical Models and Bayesian Analysis 
-* [Day 10 (01/06)](material/day10/) : RNAseq analysis
-* [Day 11 (02/06)](material/day11/) :  Distances & Dimension reduction using PCA
-* [Day 12 (03/06)](material/day12/) : Clustering and Machine Learning I 
-* [Day 13 (04/06)](material/day13/) : Clustering and Machine Learning II
-* [Day 14 (05/06)](material/day14/) : Wrap-up and projects
+* [Day 10 (02/06)](material/day10/) : RNAseq analysis
+* [Day 11 (03/06)](material/day11/) :  Distances & Dimension reduction using PCA
+* [Day 12 (04/06)](material/day12/) : Clustering and Machine Learning I 
+* [Day 13 (05/06)](material/day13/) : Clustering and Machine Learning II
 
 
 ## Course Slack channel
@@ -42,6 +41,6 @@ In the following Q&A sessions we will answer your questions on the course. Pleas
 
 ## Exercises and course evaluation
 Every day contains one or multiple exercise sheets that cover the material of the day.
-To pass the course, solutions to *at least one exercise sheet per day* should be handed in. For this, please upload the .Rmd file(s) and .html report(s) containing your solutions to a [personal slack conversation with Britta Velten](https://dataanalysis4-xqg7747.slack.com/archives/D012Q4UHDGV) by the evening of each day. Note that these will not be graded or corrected - the course will be evaluated on basis of a project on the last day (see below). How to generate the .html file and use RMarkdown (.Rmd) files will be explained on Day 1. 
+To pass the course, solutions to *at least one exercise sheet per day* should be handed in. For this, please upload the .Rmd file(s) and .html report(s) containing your solutions to a [personal slack conversation with Britta Velten](https://dataanalysis4-xqg7747.slack.com/archives/D012Q4UHDGV) by the evening of each day. Note that these will not be graded or corrected - the course will be evaluated on basis of a data analysis project (see below). How to generate the .html file and use RMarkdown (.Rmd) files will be explained on Day 1. 
 
-The last day will not cover any new material but will give you time to work on a personal data analysis project. Details will be announced on the evening of Thursday June 4. This project should be handed in by Friday evening (June 5) as an .html report and will be graded.
+For the evaluation of the course you are supposed to conduct a personal data analysis project where you can use the concepts and tools that you have learnt during the course. Details will be announced on Friday June 5. This project should be handed in by Monday evening (June 8) as an .html report and will be graded.
