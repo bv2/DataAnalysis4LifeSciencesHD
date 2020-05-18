@@ -37,7 +37,6 @@ output: html_document
 ```
 
  6.  For the last exercise, we could also use the dplyr `summarize` function. We have not introduced this function, but you can read the help file and repeat exercise 5, this time using just `filter` and `summarize` to get the answer.
-Here we will test some of the basics of R data manipulation which you should know or should have learned by following the tutorials above. You will need to have the file femaleMiceWeights.csv in your working directory. As we showed above, one way to do this is by using the downloader package:
 
 ```{r}
 # to be filled
