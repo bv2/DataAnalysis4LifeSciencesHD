@@ -18,7 +18,7 @@ For this you can follow these lectures and corresponding scripts from the book:
 ## Exercises:
 
 - [Random Variables](http://genomicsclass.github.io/book/pages/random_variables_exercises.html)
-- [Population, Samples and Estimates](http://genomicsclass.github.io/book/pages/populations_and_samples_exercises.html)
+- [Population, Samples and Estimates](ex_d2_pop_samp_est.html)  [Rmd](ex_d2_pop_samp_est.Rmd)
 -  [Central Limit Theorem](http://genomicsclass.github.io/book/pages/clt_and_t-distribution_exercises.html)
 - [Central Limit Theorem in Practice](http://genomicsclass.github.io/book/pages/clt_in_practice_exercises.html)
 
