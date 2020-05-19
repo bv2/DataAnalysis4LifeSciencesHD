@@ -23,3 +23,5 @@ For this you can follow these lectures and corresponding scripts from the book:
 - [Central Limit Theorem in Practice](http://genomicsclass.github.io/book/pages/clt_in_practice_exercises.html)
 
 
+NOTE: The original exercise Population, Samples and Estimates contains a mistake in the book. Please use the corrected version above.
+
