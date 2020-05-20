@@ -14,6 +14,6 @@ Today we will cover more advanced topics on linear models including how to model
 
 ## Exercises:
 
--   [Interactions and contrasts exercises](http://genomicsclass.github.io/book/pages/interactions_and_contrasts_exercises.html)
+-   [Interactions and contrasts exercises](http://genomicsclass.github.io/book/pages/interactions_and_contrasts_exercises.html) (recommended)
 -   [Collinearity exercises](http://genomicsclass.github.io/book/pages/collinearity_exercises.html)
 
