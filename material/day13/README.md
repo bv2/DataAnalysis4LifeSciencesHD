@@ -16,4 +16,4 @@ For this you can follow these lectures and corresponding scripts from the book:
 
 -   [Conditional expectation exercises](http://genomicsclass.github.io/book/pages/conditional_expectation_exercises.html)
 -   [Smoothing exercises](http://genomicsclass.github.io/book/pages/smoothing_exercises.html)
--   [Crossvalidation exercises](http://genomicsclass.github.io/book/pages/crossvalidation_exercises.html)
+-   [Crossvalidation exercises](http://genomicsclass.github.io/book/pages/crossvalidation_exercises.html) (recommended)
