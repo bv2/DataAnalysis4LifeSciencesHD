@@ -11,6 +11,6 @@ For this you can follow these lectures and corresponding scripts from the book:
  - Fitting Linear Models and Testing [lecture](https://www.youtube.com/watch?v=TSOzvcAgV70)  [script](http://genomicsclass.github.io/book/pages/linear_models_in_practice.html)
 
 ## Exercises:
--   [Linear models introduction exercises](http://genomicsclass.github.io/book/pages/linear_models_intro_exercises.html)
+-   [Linear models introduction exercises](http://genomicsclass.github.io/book/pages/linear_models_intro_exercises.html) (recommended)
 -   [Expressing design formula exercises](http://genomicsclass.github.io/book/pages/expressing_design_formula_exercises.html)
 -   [Linear models in practice exercises](http://genomicsclass.github.io/book/pages/linear_models_in_practice_exercises.html)
