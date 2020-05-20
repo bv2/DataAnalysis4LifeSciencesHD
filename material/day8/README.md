@@ -16,7 +16,7 @@ For this you can follow these lectures and corresponding scripts from the book:
 
 
 ## Exercises:
--   [Introduction to high-throughput data exercises](http://genomicsclass.github.io/book/pages/intro_to_highthroughput_data_exercises.html)
--   [Inference for high-throughput data exercises](http://genomicsclass.github.io/book/pages/inference_for_highthroughput_exercises.html)
+-   [Introduction to high-throughput data exercises](http://genomicsclass.github.io/book/pages/intro_to_highthroughput_data_exercises.html) (recommended)
+-   [Inference for high-throughput data exercises](http://genomicsclass.github.io/book/pages/inference_for_highthroughput_exercises.html)(recommended)
 -   [Multiple testing exercises](http://genomicsclass.github.io/book/pages/multiple_testing_exercises.html)
  -   [EDA for high-throughput data exercises](http://genomicsclass.github.io/book/pages/eda_for_highthroughput_exercises.html)
