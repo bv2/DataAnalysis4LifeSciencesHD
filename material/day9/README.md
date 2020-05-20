@@ -16,6 +16,6 @@ For this you can follow these lectures and corresponding scripts from the book:
 
 
 ## Exercises:
--   [Modeling exercises](http://genomicsclass.github.io/book/pages/modeling_exercises.html)
+-   [Modeling exercises](http://genomicsclass.github.io/book/pages/modeling_exercises.html) (recommended)
 -   [Bayes theorem exercises](http://genomicsclass.github.io/book/pages/bayes_exercises.html)
 -   [Hierarchical models exercises](http://genomicsclass.github.io/book/pages/hierarchical_models_exercises.html)
