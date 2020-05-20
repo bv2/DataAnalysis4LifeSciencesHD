@@ -16,7 +16,7 @@ Today we will learn about matrix algebra which will be important for understandi
 ## Exercises:
 
 -   [Introduction to using regression exercises](http://genomicsclass.github.io/book/pages/intro_using_regression_exercises.html)
--   [Matrix notation exercises](http://genomicsclass.github.io/book/pages/matrix_notation_exercises.html)
--   [Matrix operations exercises](http://genomicsclass.github.io/book/pages/matrix_operations_exercises.html)
+-   [Matrix notation exercises](http://genomicsclass.github.io/book/pages/matrix_notation_exercises.html) (recommended)
+-   [Matrix operations exercises](http://genomicsclass.github.io/book/pages/matrix_operations_exercises.html) (recommended)
 -   [Matrix algebra examples exercises](http://genomicsclass.github.io/book/pages/matrix_algebra_examples_exercises.html)
 -   [Standard errors exercises](http://genomicsclass.github.io/book/pages/standard_errors_exercises.html)
