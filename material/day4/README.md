@@ -16,5 +16,5 @@ Today we will take a look at exploratory data analysis and robust statistics as 
 
 ## Exercises:
 
--  [Exploratory data analysis exercises](http://genomicsclass.github.io/book/pages/exploratory_data_analysis_exercises.html)
+-  [Exploratory data analysis exercises](http://genomicsclass.github.io/book/pages/exploratory_data_analysis_exercises.html) (recommended)
 -   [Robust summaries exercises](http://genomicsclass.github.io/book/pages/robust_summaries_exercises.html)
