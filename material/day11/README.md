@@ -16,6 +16,6 @@ Today we will learn how to visualize and analyse a high-dimensional data set by 
 
 ## Exercises:
 
--   [Distance exercises](http://genomicsclass.github.io/book/pages/distance_exercises.html)
+-   [Distance exercises](http://genomicsclass.github.io/book/pages/distance_exercises.html) (recommended)
 -   [SVD exercises](http://genomicsclass.github.io/book/pages/svd_exercises.html)
 -   [MDS exercises](http://genomicsclass.github.io/book/pages/mds_exercises.html)
