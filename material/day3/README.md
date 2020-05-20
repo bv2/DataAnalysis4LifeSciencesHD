@@ -14,8 +14,8 @@ For this you can follow these lectures and corresponding scripts from the book:
 
 ## Exercises:
 
-- [Power Calculation Exercises](http://genomicsclass.github.io/book/pages/power_calculations_exercises.html)
-- [Monte Carlo Exercises](http://genomicsclass.github.io/book/pages/monte_carlo_exercises.html)
+- [Power Calculation Exercises](http://genomicsclass.github.io/book/pages/power_calculations_exercises.html) (recommended)
+- [Monte Carlo Exercises](http://genomicsclass.github.io/book/pages/monte_carlo_exercises.html) 
 -  [Permutation Test Exercises](http://genomicsclass.github.io/book/pages/permutation_tests_exercises.html)
 - [Association Test Exercises](http://genomicsclass.github.io/book/pages/association_tests_exercises.html)
 
