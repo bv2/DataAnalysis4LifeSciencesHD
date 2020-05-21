@@ -1,17 +1,14 @@
 # Day 7
 
 Today we will repeat some concepts from the last days.
-For this go through the following exercise:
+For this go through the following exercise and hand them in by the end of today.
+If parts are unclear, take your time to go back to the chapters in the book that covered this part.
 
-## Exercises
-Do the following exercise. If parts are unclear, take your time to go back to the chapters in the book that covered this part.
+Wrap-up exercise: [(html)](https://rawcdn.githack.com/bv2/DataAnalysis4LifeSciencesHD/35efff3fa491e9db008900883c38fbde5f9e5ed2/material/day7/repetition_exercise.html) [(Rmd)](repetition_exercise.Rmd)
 
-Wrap-up Exercise: [(html)](https://rawcdn.githack.com/bv2/DataAnalysis4LifeSciencesHD/35efff3fa491e9db008900883c38fbde5f9e5ed2/material/day7/repetition_exercise.html) [(Rmd)](repetition_exercise.Rmd)
+## Optional advanced material on linear models
 
-## Optional material on linear models
-
-Alterntively, if you feel confident with the material of the last days you can look into a more advanced part of the book that  covers more advanced topics on linear models including how to model interactions in the model. Note that this is optional and will not be relevant for the remainder of the course. For this you can follow these lectures and corresponding scripts from the book:
-
+If you feel confident with the material of the last days you can look into a more advanced part of the book that  covers more advanced topics on linear models including how to model interactions in the model. Note that this is optional . If you are interested, you can follow these lectures and corresponding scripts from the book:
 
 - Interactions and Contrasts I [lecture](https://www.youtube.com/watch?v=Wa1QkyF4peU)  [script](http://genomicsclass.github.io/book/pages/interactions_and_contrasts.html)
 - Interactions and Contrasts II [lecture](https://www.youtube.com/watch?v=ZU5jb86vXag)  [script](http://genomicsclass.github.io/book/pages/interactions_and_contrasts.html)
@@ -22,8 +19,8 @@ Alterntively, if you feel confident with the material of the last days you can l
 - QR Factorization [lecture](https://www.youtube.com/watch?v=yL3lrirzNnQ)  [script](http://genomicsclass.github.io/book/pages/qr_and_regression.html)
 
 
-## Exercises:
+### Exercises:
 
--   [Interactions and contrasts exercises](http://genomicsclass.github.io/book/pages/interactions_and_contrasts_exercises.html) (recommended)
+-   [Interactions and contrasts exercises](http://genomicsclass.github.io/book/pages/interactions_and_contrasts_exercises.html)
 -   [Collinearity exercises](http://genomicsclass.github.io/book/pages/collinearity_exercises.html)
 

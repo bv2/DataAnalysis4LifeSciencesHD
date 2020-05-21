@@ -13,14 +13,14 @@ The course consists of 13 days plus a personal data analysis project, where each
 * [Day 3 (20/05)](material/day3/) : Probability theory II: Inference
 * [Day 4 (22/05)](material/day4/) : Exploratory Data Analysis and Robust Statistics
 * [Day 5 (25/05)](material/day5/) : Matrices and matrix algebra
-* [Day 6 (26/05)](material/day6/) : Linear Models I - introduction
-* [Day 7 (27/05)](material/day7/) : Wrap-up and further practice on Day 1 - Day 6
+* [Day 6 (26/05)](material/day6/) : Linear Models
+* [Day 7 (27/05)](material/day7/) : **Exercises**: Wrap-up and further practice on Day 1 - Day 6
 * [Day 8 (28/05)](material/day8/) : Multiple testing
 * [Day 9 (29/05)](material/day9/) : Statistical Models and Bayesian Analysis 
 * [Day 10 (02/06)](material/day10/) : RNAseq analysis
-* [Day 11 (03/06)](material/day11/) :  Distances & Dimension reduction using PCA
-* [Day 12 (04/06)](material/day12/) : Clustering and Machine Learning I 
-* [Day 13 (05/06)](material/day13/) : Clustering and Machine Learning II
+* [Day 11 (03/06)](material/day11/) : Distances & Dimension reduction using PCA
+* [Day 12 (04/06)](material/day12/) : Clustering and Machine Learning 
+* [Day 13 (05/06)](material/day13/) : **Exercises**:  Wrap-up and further practice on Day 8 - Day 12
 
 
 ## Course Slack channel
@@ -40,7 +40,6 @@ The first Q&A session on Monday May 18 will serve as an introduction to the cour
 In the following Q&A sessions we will answer your questions on the course. Please post any questions in the  [#questions channel](https://dataanalysis4-xqg7747.slack.com/archives/C012RP3781H) in Slack and we will answer them directly or in the following Q&A session.
 
 ## Exercises and course evaluation
-Every day contains one or multiple exercise sheets that cover the material of the day.
-To pass the course, solutions to *at least one exercise sheet per day* should be handed in. For this, please upload the .Rmd file(s) and .html report(s) containing your solutions to a [personal slack conversation with Britta Velten](https://dataanalysis4-xqg7747.slack.com/archives/D012Q4UHDGV) by the evening of each day. Note that these will not be graded or corrected - the course will be evaluated on basis of a data analysis project (see below). How to generate the .html file and use RMarkdown (.Rmd) files will be explained on Day 1. 
+On two days (Day 7 and Day 13) there will be no new material. Instead on these days you will go through an exercise that repeats the concepts from the previous days. To pass the course please hand in these exercises. For this, please upload the .Rmd file(s) and .html report(s) containing your solutions to a [personal slack conversation with Britta Velten](https://dataanalysis4-xqg7747.slack.com/archives/D012Q4UHDGV) by the evening of each day. The course will be evaluated on basis of a data analysis project (see below). How to generate the .html file and use RMarkdown (.Rmd) files will be explained on Day 1. 
 
 For the evaluation of the course you are supposed to conduct a personal data analysis project where you can use the concepts and tools that you have learnt during the course. Details will be announced on Friday June 5. This project should be handed in by Monday evening (June 8) as an .html report and will be graded.

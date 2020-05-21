@@ -7,7 +7,7 @@ output: html_document
 All questions should be answered by a single Rmd file that produces the answer to the question in code chunks and has text that interprets or describes the results where required.
 
 
-0. Load the `dplyr` library and set a seed of 1.
+0. Load the `dplyr` library.
 ```{r}
 
 ```
@@ -26,44 +26,55 @@ download(url, destfile=filename)
 
 ```
 
-2. Determine how many mice are present on the high-fat fiet ('hf') and how many on normal diet ('chow'). What is the average weight in the high-fat group? What is their median?
+2. Determine how many mice are present on the high-fat diet ('hf') and how many on normal diet ('chow'). Extract the weights of mice on a high-fat diet. What is the average weight in the high-fat group? What is their median? What is their variance?
+```{r}
+
+```
+
+3. How would you expect the median and the mean to change if we add a mouse with weight 100 to the weight vector of the high-fat group above? Explain and test whether your conjecture was right.
+```{r}
+
+```
+
+4. Go back to the full data of all weights (`data`). Is the Bodyweight significantly different between the two groups of mice? Perform a t-test and interpret the results. *Optional: Could it be that you made a type-I or type-II error?*
 ```{r}
 
 ```
 
 
-3. Is the Bodyweight significantly different between the two groups of mice? Perform a t-test and interpret the results.
+5. Use a boxplot to illustrate the distribution of weights within each group. Describe how the median and the 75% quantile compare between the groups? Are outliers present in one of the groups?
 ```{r}
 
 ```
 
 
-4. Use a boxplot to illustrate the distribution of weights within each group. Describe how the median and the 75% quantile compare between the groups? Are outliers present in the 'hf' group?
+6. Set a seed at 1 and sample a random number from a normal distribution with mean 2 and standard deviation 0.5. Do you expect that your class mates will get the same number?
 ```{r}
 
 ```
 
+7. *Optional:* Set a seed at 1 and and sample from `1:nrow(data)` a sample of size `nrow(data)`. Use this to obtain a permuted version of the weights column but keep the other columns unchanged. Are the permuted weights significantly different between the two groups of mice? Perform a t-test and interpret the results.
 
 
-Load the folowing data:
+8. Load the following data:
 ```{r}
 data(nym.2002, package="UsingR")
 ```
 
-5. Fit a linear model of finish time on age and intepret the results. Is age a significant predictor of finish times? Are older runners faster?
+9. Fit a linear model of finish time on age and intepret the results. Is age a significant predictor of finish times? Are older runners faster? What is the 95% confidence interval of the coefficient of age? *Hint: Use the `summary` function to obtain details on the fitted linear model including the estimate and the standard error and note that for a normal distribution the 95% confidence interval is given by +/- 1.96 standard errors.*
 
 ```{r}
 
 ```
 
 
-6. Create two separate dataframes for runner home: `MA` and `NY` and make histograms of the finish times of each group.
+10. Create two separate dataframes for runner home: `MA` and `NY` and plot histograms of the finish times of each group. Which one has a higher spread?
 ```{r}
 
 ```
 
 
-7. What is the Pearson correlation between age and finish time in each group? Make scatterplots of time versus age for each group?
+11. What is the Pearson correlation between age and finish time in each group? Make scatterplots of time versus age for each group.
 ```{r}
 
 ```
