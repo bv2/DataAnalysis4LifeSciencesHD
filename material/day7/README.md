@@ -6,7 +6,7 @@ For this go through the following exercise:
 ## Exercises
 Do the following exercise. If parts are unclear, take your time to go back to the chapters in the book that covered this part.
 
-Wrap-up Exercise: [(html)](repetition_exercise.html) [(Rmd)](repetition_exercise.Rmd)
+Wrap-up Exercise: [(html)](https://rawcdn.githack.com/bv2/DataAnalysis4LifeSciencesHD/35efff3fa491e9db008900883c38fbde5f9e5ed2/material/day7/repetition_exercise.html) [(Rmd)](repetition_exercise.Rmd)
 
 ## Optional material on linear models
 
