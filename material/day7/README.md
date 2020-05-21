@@ -4,7 +4,7 @@ Today we will repeat some concepts from the last days.
 For this go through the following exercise and hand them in by the end of today.
 If parts are unclear, take your time to go back to the chapters in the book that covered this part.
 
-Wrap-up exercise: [(html)](https://rawcdn.githack.com/bv2/DataAnalysis4LifeSciencesHD/35efff3fa491e9db008900883c38fbde5f9e5ed2/material/day7/repetition_exercise.html) [(Rmd)](repetition_exercise.Rmd)
+Wrap-up exercise: [(html)](https://rawcdn.githack.com/bv2/DataAnalysis4LifeSciencesHD/27695f6bb46d8d1fecebbb115eb6a0cde2bc2910/material/day7/repetition_exercise.html) [(Rmd)](repetition_exercise.Rmd)
 
 ## Optional advanced material on linear models
 
