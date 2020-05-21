@@ -1,0 +1,71 @@
+---
+title: "Wrap-up exercises for Day 1 - Day 6"
+date: "Day 7"
+output: html_document
+---
+
+All questions should be answered by a single Rmd file that produces the answer to the question in code chunks and has text that interprets or describes the results where required.
+
+
+0. Load the `dplyr` library and set a seed of 1.
+```{r}
+
+```
+
+1. Download the mouse data set
+```{r}
+library(downloader) 
+url <- "https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/femaleMiceWeights.csv"
+filename <- "femaleMiceWeights.csv" 
+download(url, destfile=filename)
+```
+
+
+1.  Read in the file `femaleMiceWeights.csv` as an object called `data`. What class is the object? What are the column names?
+```{r}
+
+```
+
+2. Determine how many mice are present on the high-fat fiet ('hf') and how many on normal diet ('chow'). What is the average weight in the high-fat group? What is their median?
+```{r}
+
+```
+
+
+3. Is the Bodyweight significantly different between the two groups of mice? Perform a t-test and interpret the results.
+```{r}
+
+```
+
+
+4. Use a boxplot to illustrate the distribution of weights within each group. Describe how the median and the 75% quantile compare between the groups? Are outliers present in the 'hf' group?
+```{r}
+
+```
+
+
+
+Load the folowing data:
+```{r}
+data(nym.2002, package="UsingR")
+```
+
+5. Fit a linear model of finish time on age and intepret the results. Is age a significant predictor of finish times? Are older runners faster?
+
+```{r}
+
+```
+
+
+6. Create two separate dataframes for runner home: `MA` and `NY` and make histograms of the finish times of each group.
+```{r}
+
+```
+
+
+7. What is the Pearson correlation between age and finish time in each group? Make scatterplots of time versus age for each group?
+```{r}
+
+```
+
+
