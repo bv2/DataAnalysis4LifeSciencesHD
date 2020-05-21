@@ -11,6 +11,8 @@ For this you can follow these lectures and corresponding scripts from the book:
  - Error Rates and Procedures Examples [lecture](https://www.youtube.com/watch?v=pn3UllO26FE)  [script](http://genomicsclass.github.io/book/pages/multiple_testing.html)
 - Bonferroni Correction [lecture](https://www.youtube.com/watch?v=X6R1pptBHZA)  [script](http://genomicsclass.github.io/book/pages/multiple_testing.html)
  - False Discovery Rate and Benjamini–Hochberg procedure [lecture](https://www.youtube.com/watch?v=ylKVIye4d_c)  [script](http://genomicsclass.github.io/book/pages/multiple_testing.html)
+ 
+ Optional:
 - q-values [lecture](https://www.youtube.com/watch?v=tomS-c321rI)  [script](http://genomicsclass.github.io/book/pages/multiple_testing.html)
 
 

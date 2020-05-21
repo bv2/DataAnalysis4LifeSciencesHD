@@ -14,7 +14,7 @@ The course consists of 13 days plus a personal data analysis project, where each
 * [Day 4 (22/05)](material/day4/) : Exploratory Data Analysis and Robust Statistics
 * [Day 5 (25/05)](material/day5/) : Matrices and matrix algebra
 * [Day 6 (26/05)](material/day6/) : Linear Models I - introduction
-* [Day 7 (27/05)](material/day7/) : Linear Models II - Modelling interactions
+* [Day 7 (27/05)](material/day7/) : Wrap-up and further practice on Day 1 - Day 6
 * [Day 8 (28/05)](material/day8/) : Multiple testing
 * [Day 9 (29/05)](material/day9/) : Statistical Models and Bayesian Analysis 
 * [Day 10 (02/06)](material/day10/) : RNAseq analysis
