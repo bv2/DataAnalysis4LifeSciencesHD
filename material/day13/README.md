@@ -1,7 +1,7 @@
 # Day 13
 
 Today we will repeat some concepts from the last days.
-For this go through the following exercise and hand them in by the end of today.
+For this go through the following exercise and hand them in by the end of today *before the Q&A session at 5 pm*.
 If parts are unclear, take your time to go back to the chapters in the book that covered this part.
 
 Wrap-up exercise:
