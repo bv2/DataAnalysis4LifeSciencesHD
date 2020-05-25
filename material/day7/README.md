@@ -8,7 +8,7 @@ Wrap-up exercise: [(html)](https://rawcdn.githack.com/bv2/DataAnalysis4LifeScien
 
 ## Optional advanced material on linear models
 
-If you feel confident with the material of the last days you can look into a more advanced part of the book that  covers more advanced topics on linear models including how to model interactions in the model. Note that this is optional . If you are interested, you can follow these lectures and corresponding scripts from the book:
+If you feel confident with the material of the last days you can look into a more advanced part of the book that  covers more advanced topics on linear models including how to model interactions in the model. Note that this is optional but useful to better understand the foundations of RNAseq analysis. If you are interested, you can follow these lectures and corresponding scripts from the book:
 
 - Interactions and Contrasts I [lecture](https://www.youtube.com/watch?v=Wa1QkyF4peU)  [script](http://genomicsclass.github.io/book/pages/interactions_and_contrasts.html)
 - Interactions and Contrasts II [lecture](https://www.youtube.com/watch?v=ZU5jb86vXag)  [script](http://genomicsclass.github.io/book/pages/interactions_and_contrasts.html)
