@@ -10,5 +10,5 @@ Before starting with the exercises please go through Chapter 8 of Modern Statist
 
 ### Excercises
 
-Today there are no extra exercises. The book chapter is very complex and important, so please take your time to go through everything carefully and experiment with the code. The exercises at the end of the book chapter are not relevant for this course. If you want, you can take a look at Exercise 8.1. If you feel you are confident with everything covered today you can already start working on the wrap-up exercise of Day 13, which will also contain an RNA-seq example.
+Today there are no extra exercises. The book chapter is very complex and important, so please take your time to go through everything carefully and experiment with the code. The exercises at the end of the book chapter are not relevant for this course. If you want, you can take a look at Exercise 8.1. If you feel you are confident with everything covered today you can already start working on the wrap-up exercise of [Day 13](../day13), which will also contain an RNA-seq example.
 

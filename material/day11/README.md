@@ -8,8 +8,6 @@ Today we will learn how to visualize and analyse a high-dimensional data set by 
 - Distance Reduction Motivation [lecture](https://www.youtube.com/watch?v=uu964pCDGaw)  [script](http://genomicsclass.github.io/book/pages/distance.html)
 
 - SVD [lecture](https://www.youtube.com/watch?v=5K-h9eOilsg)  [script](http://genomicsclass.github.io/book/pages/svd.html)
-
-### Optional 
 - Projections [lecture](https://www.youtube.com/watch?v=yPecNb3-UXw)  [script](http://genomicsclass.github.io/book/pages/projections.html)
 - Rotations [lecture](https://www.youtube.com/watch?v=QYbeZXKQsCc)  [script](http://genomicsclass.github.io/book/pages/rotations.html)
 
@@ -18,10 +16,8 @@ Today we will learn how to visualize and analyse a high-dimensional data set by 
 
 
 
-## Exercises:
+## Exercises (optional):
 
--   [Distance exercises](http://genomicsclass.github.io/book/pages/distance_exercises.html) (recommended)
-
-## Optional
+-   [Distance exercises](http://genomicsclass.github.io/book/pages/distance_exercises.html)
 -   [SVD exercises](http://genomicsclass.github.io/book/pages/svd_exercises.html)
 -   [MDS exercises](http://genomicsclass.github.io/book/pages/mds_exercises.html)
