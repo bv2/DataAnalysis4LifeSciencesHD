@@ -1,0 +1,330 @@
+---
+title: "Elements of RNA-Seq data analysis"
+subtitle: "Exercise for the course Data Analysis for the Life Sciences at the University of Heidelberg"
+date: "2020-06-05 (Day 13)"
+author: "Britta Velten and Wolfgang Huber"
+output: 
+  BiocStyle::html_document:
+    toc: true
+    toc_float: true
+    code_download: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.dim = c((1+sqrt(5))/2, 1) * 5, cache = TRUE, autodep = TRUE) 
+options(width = 70)
+```
+
+# Motivation and goals
+
+In this lab, we will explore some of the data analytical methods needed for the analysis of RNA-Seq data. These cover a wide range of statistical concepts, including
+
+- hypothesis testing and multiple testing
+- visualization of large matrices using heatmaps
+- clustering and distance metrics
+- ordination methods such as PCA
+- (gene set) enrichment analysis
+
+
+# Setup
+
+## Load Packages
+
+First let's make sure we have all the needed packages installed.
+
+```{r install, eval = FALSE}
+pkgs_needed = c("dplyr", "ggplot2", "DESeq2", "pasilla", "genefilter",
+                "pheatmap", "readr", "tibble", 
+                "org.Dm.eg.db", "AnnotationDbi", "gsean", "WGCNA")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(setdiff(pkgs_needed, installed.packages()))
+```
+
+Then let's load the packages.
+
+```{r load, warning = FALSE, message = FALSE}
+library("tidyverse")
+library("ggplot2")
+library("DESeq2")
+library("pasilla")
+library("genefilter")
+library("pheatmap")
+```
+
+## Example dataset: pasilla
+
+The `pasilla` data are from an experiment on Drosophila melanogaster cell
+cultures that investigated the effect of RNAi knock-down of the splicing factor 
+on the cells' transcriptome. In our case, the data are stored as a rectangular table 
+in a tab-delimited file that comes within the R package `pasilla`. We use the function 
+`read.table` to read this file and put the data into the R variable `counts`.
+
+```{r loadpas, results = "hide", error = FALSE}
+fn = system.file("extdata", "pasilla_gene_counts.tsv",
+                  package = "pasilla", mustWork = TRUE)
+countsdf = read.csv(fn, sep = "\t", row.names = "gene_id")
+counts = as.matrix(countsdf)
+```
+
+**Activity**: Use a spreadsheet programme (such as MS Excel) to look at the file.
+
+```{r quesnum, echo = FALSE}
+iques = 0
+```
+
+**Question `r (iques = iques+1)`**: what are the data types of the variables `countsdf` and `counts`? What is the difference?
+
+
+NB: If/when you want to work with other data, you'll have to prepare (or download) a similar count table and read it into R with similar steps as above. Section 2 of the [Bioconductor RNA-Seq workflow](https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html) gives some useful hints on this; there are also many other online tutorials.
+
+**Question `r (iques = iques+1)`**: what are the dimensions of the `counts` matrix? Print three random rows from it.
+
+
+When loading data from a file, a good plausibility check is to print out some of 
+the data, and maybe not only at the very beginning, but also at some random 
+point in the middle, as we have done above. 
+
+**Question `r (iques = iques+1)`**: what is the interpretation of `counts[45, 2]`?
+
+
+There were two experimental conditions, termed **untreated** and **treated** in 
+the header of the count table that we loaded. They correspond to negative
+control and to siRNA against the gene pasilla, a nuclear RNA binding protein implicated in splicing.  The experimental metadata of the 
+`r ncol(counts)` samples in this dataset are provided in a spreadsheet-like 
+table. Next, we again use the function `system.file` to locate a file with this information, which is 
+shipped together with the `pasilla` package. When you work with your own data, 
+simply prepare and load the corresponding file, or use some other way to 
+generate a dataframe like `pasillaSampleAnno`.
+
+```{r annotationFile, message = FALSE}
+annotationFile = system.file("extdata", "pasilla_sample_annotation.csv",
+                             package = "pasilla", mustWork = TRUE)
+pasillaSampleAnno = readr::read_csv(annotationFile)
+pasillaSampleAnno
+```
+
+As we see here, the overall dataset was produced in two batches, the first one 
+consisting of three sequencing libraries that were subjected to single-read 
+sequencing, the second batch consisting of four libraries for which paired-end 
+sequencing was used.  Let's convert the relevant columns of `pasillaSampleAnno` 
+into factors, overriding the default level ordering (which is alphabetical) by 
+one that makes more sense to us.
+
+```{r factors}
+pasillaSampleAnno = mutate(
+  pasillaSampleAnno,
+  condition = factor(condition, levels = c("untreated", "treated")),
+  type      = factor(type, levels = c("single-read", "paired-end")))
+```
+
+**Question `r (iques = iques+1)`**: The design is approximately balanced between the factor of interest, `condition`, and the nuisance factor `type`. How can you check that? Use the `table` function.
+
+
+We use the constructor function `DESeqDataSetFromMatrix` to create a `DESeqDataSet` from the matrix `counts` and the sample annotation dataframe `pasillaSampleAnno`.
+
+Note how in the code below, we have to put in extra work to match the column names of the `counts` object with the `file` column of the `pasillaSampleAnno` dataframe, in particular, we need to remove the `fb` that happens to be used in the `file` column for some reason. Such data wrangling is very common in bioinformatics and data science. One of the reasons for storing the data in a `DESeqDataSet` object is that we then no longer have to worry about such things.
+
+```{r DESeq2, message = FALSE, warning = FALSE}
+mt = match(colnames(counts), sub("fb$", "", pasillaSampleAnno$file))
+pasilla = DESeqDataSetFromMatrix(
+  countData = counts,
+  colData   = pasillaSampleAnno[mt, ],
+  design    = ~ condition)
+class(pasilla)
+is(pasilla, "SummarizedExperiment")
+```
+
+The `SummarizedExperiment` class --and therefore `DESeqDataSet`-- also
+contains facilities for storing annotation of the rows of the count matrix. 
+For now, we are content with the gene identifiers from the row names of 
+the `counts` table.
+
+**Question `r (iques = iques+1)`**: When we constructed our `SummarizedExperiment` object, we 
+also saved some column metadata which we had initially stored in 
+`pasillaSampleAnno`. With which function can we extract this information again?
+(Hint:`?SummarizedExperiment`)
+
+
+# The DESeq2 method
+
+After these preparations, we are now ready to jump straight into differential 
+expression analysis. A choice of standard analysis steps are wrapped into a
+single function, `DESeq`.
+
+```{r deseq, message = TRUE}
+pasilla = DESeq(pasilla)
+```
+
+The `DESeq` function is simply a wrapper that calls, in order, the functions 
+`estimateSizeFactors`, `estimateDispersions` (dispersion estimation) and 
+`nbinomWaldTest` (hypothesis tests for differential abundance). You can
+always call these functions individually if you want to modify their behavior
+or interject custom steps. Let us look at the results (we use the `arrange` 
+function to order the results by p-value, starting with the lowest).
+
+```{r theresults}
+res = results(pasilla)
+arrange(as_tibble(res, rownames = "geneid"), pvalue)
+```
+
+# Explore the result
+
+**Question `r (iques = iques+1)`**: 
+Plot the data for the top 2 genes (those with the smallest p-values), as well as for 6 random genes
+
+
+# The histogram of p-values and multiple testing
+
+**Question `r (iques = iques+1)`**: 
+Plot the histogram of p-values.
+
+  
+The distribution displays two main components: a uniform background with values 
+between 0 and 1, and a peak of small p-values at the left.  The uniform 
+background corresponds to the non-differentially expressed genes. Usually this 
+is the majority of genes. The left hand peak corresponds to differentially expressed genes.
+
+The ratio of the level of the background to the height of the peak gives us 
+a rough indication of the false discovery rate (FDR) that would be associated 
+with calling the genes in the leftmost bin differentially expressed.
+
+**Question `r (iques = iques+1)`**: 
+
+How many p-values are $\le 0.01$? Compute the median height of all the bins in the histogram, and divide this by the height of the first (leftmost) bin. What is an interpretation of this quantity? Compare it to the false discovery rate as computed by the Benjamini-Hochberg method.
+
+  
+
+# MA plot
+
+Read the Wikipedia description for [MA plots](https://en.wikipedia.org/wiki/MA_plot). The plots shows the observed fold change versus the mean of the (size-factor normalized) counts. Logarithmic scaling is used for both axes. Points which fall out of the y-axis range are plotted as triangles. To produce an MA plot for our data, we can use the function `plotMA` in the `DESeq2` package.
+
+```{r MA}
+plotMA(pasilla, ylim = c( -2, 2))
+```
+
+# PCA plot
+
+**Question `r (iques = iques+1)`**: 
+Use the `DESeq2` function `plotPCA` to produce a two-dimensional ordination of the `r ncol(pasilla)` samples in the dataset. Before doing that, first transform the data with the variance stabilizing transformation provided by `DESeq2`. 
+
+
+This type of plot is useful for visualizing the overall effect of experimental 
+covariates and/or to detect batch effects. Here, the first principal axis,
+PC1, is mostly aligned with the experimental covariate of interest 
+(untreated / treated), while the second axis is roughly aligned with 
+the sequencing protocol (single-read / paired-end). Instead of PCA, other 
+ordination methods, for instance multi-dimensional scaling, can also be useful.
+
+# Heatmaps
+
+Draw a heatmap of the transformed data `pas_trsf`. Since it's impractical to show all `r nrow(pasilla)` rows, only plot the subset of the 30 most variable genes.
+
+**Question `r (iques = iques+1)`**: 
+  
+  
+If you want, you can try a different heatmap package (for example `ComplexHeatmap`) and explore a more enriched heatmap plot.
+
+# Two-factor analysis
+
+Besides the treatment with siRNA, the `pasilla` data have another covariate,
+`type`, which indicates the type of sequencing that was performed.
+We saw in the PCA plot that this `type` had a considerable 
+systematic effect on the data. Our basic analysis did not take this account, 
+but we will do so now. This should help us get a more correct picture of which
+differences in the data are attributable to the treatment, and which are
+confounded---or masked---by the sequencing type.
+
+```{r replaceDesign, message = FALSE, results = "hide"}
+pasillaTwoFactor = pasilla
+design(pasillaTwoFactor) = formula(~ type + condition)
+pasillaTwoFactor = DESeq(pasillaTwoFactor)
+```
+
+Of the two variables `type` and `condition`, the one of primary interest
+is the latter, and in `DESeq2`, the convention is to put it at the end of the
+formula. This convention has no effect on the model fitting, but it helps 
+simplify some of the subsequent results reporting. Again, we access the results 
+using the `results` function.
+
+```{r multiResults}
+res2 = results(pasillaTwoFactor)
+arrange(as_tibble(res2, rownames = "geneid"), pvalue)
+```
+
+It is also possible to retrieve the $\log_2$ fold changes, p-values and adjusted
+p-values associated with the `type` variable.  The function `results` takes an
+argument `contrast` that lets users specify the name of the variable, the level
+that corresponds to the numerator of the fold change and the level that corresponds
+to the denominator of the fold change.
+
+```{r multiTypeResults}
+resType = results(pasillaTwoFactor, 
+                  contrast = c("type", "single-read", "paired-end"))
+
+arrange(as_tibble(resType, rownames = "geneid"), pvalue)
+```
+
+So what did we gain from this analysis that took into account `type` as a 
+nuisance factor (sometimes also called, more politely, a blocking factor), 
+compared to the simple comparison between two groups? 
+
+**Question `r (iques = iques+1)`**: 
+Count and compare the number of genes that pass a certain significance threshold in 
+each of the two analyses.
+
+
+**Question `r (iques = iques+1)`**: 
+Make a scatterplot of -log10 of the p-values from both analyses against each other. What do you notice?
+  
+
+# A gene set enrichment analysis
+
+We here conduct a basic workflow the purpose of which is to give us some feeling or intuition about the results. This is not hardcore statistics. There are numerous options, subtleties and various software implementations with a wide range of quality. 
+
+First, we need to embark in one of the favourite bioinformatics pasttimes, converting gene identifies from one system to another. The function that we use here, `gsean` from the equinymous package, emits some warnings, which we could dig into, or ignore for now.
+
+```{r orgdm, message = FALSE, warning = FALSE, results = "hide"}
+library("gsean")
+library("org.Dm.eg.db")
+
+statistic = setNames(res2$stat, rownames(res2))
+geneid = AnnotationDbi::select(org.Dm.eg.db, names(statistic), 
+                               "ENTREZID", "FLYBASE")
+exprs_pasilla = counts(pasilla, normalized = TRUE)
+stopifnot(identical(geneid$FLYBASE, names(statistic)), 
+          identical(geneid$FLYBASE, rownames(exprs_pasilla)))
+
+names(statistic) = rownames(exprs_pasilla) = geneid$ENTREZID
+
+load(system.file("data", "GO_dme.rda", package = "gsean"))
+gsea = gsean(GO_dme, statistic, exprs_pasilla)
+p = GSEA.barplot(gsea, category = 'pathway', score = 'NES', 
+             top = 15, pvalue = 'padj', sort = 'padj', 
+             numChar = 110) + 
+  theme(plot.margin = margin(10, 10, 10, 50))
+```
+```{r gseaplot, fig.dim = c(10, 3.5)}
+plotly::ggplotly(p)
+```
+
+
+```{r withoutsolutions, echo = FALSE}
+removeAnswers = function(x, begin = "^<div class=\"answer\">$", end = "^</div>$") {
+  i1 = grep(begin, x)
+  i2 = grep(end, x)
+  stopifnot(length(i1)==length(i2), all(i1<i2))
+  r = unlist(mapply(`:`, i1, i2, SIMPLIFY  = FALSE)) 
+  if (length(r) > 0) x[-r] else x
+}
+files = c("Testing-and-RNAseq.Rmd", "Testing-and-RNA-noans.Rmd")
+readLines(files[1]) %>% 
+  removeAnswers %>%
+  writeLines(files[2])
+# rmarkdown::render(files[2])
+```
+
+## Literature
+
+[Modern Statistics for Modern Biology by Susan Holmes and Wolfgang Huber. Chapter 8: High-Throughput Count Data](https://www.huber.embl.de/msmb/Chap-CountData.html).
