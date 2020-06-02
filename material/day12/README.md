@@ -13,7 +13,7 @@ For this you can follow these lectures and corresponding scripts from the book:
 - Gene Clustering [lecture](https://www.youtube.com/watch?v=yMubXDjw4Bw)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)
 
 
-## Exercises:
+## Exercises (optional)
 
 -   [Clustering and heatmaps exercises](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps_exercises.html)
 
