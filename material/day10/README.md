@@ -9,9 +9,3 @@ Before starting with the exercises please go through Chapter 8 of Modern Statist
  * [lecture](https://www.huber.embl.de/msmb/video/Lect07-5sec/Lect07-RNAseq.mp4) 
 
 
-## Exercises:
-
--   [RNAseq analysis](https://www.huber.embl.de/msmb/course_spring_2020/Lab06_testing_RNAseq.html)
-
-
-
