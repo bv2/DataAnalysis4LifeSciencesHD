@@ -34,7 +34,7 @@ All discussions, announcemnets and Q&A sessions of the course will be communicae
 
 ## Q&A Sessions
 Q&A Sessions will take place via Zoom every Monday and Thursday at 10am (duration: 30min - 1 hour). Details will be announced via Slack.
-**Note: The last Q&A session on June 4 will start at 10:10am** 
+**Note: The last Q&A session on June 4 will start at 10:30am** 
 
 The first Q&A session on Monday May 18 will serve as an introduction to the course explaining:
 
