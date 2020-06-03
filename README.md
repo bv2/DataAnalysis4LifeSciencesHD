@@ -18,9 +18,9 @@ The course consists of 13 days plus a personal data analysis project, where each
 * [Day 8 (28/05)](material/day8/) : Multiple testing
 * [Day 9 (29/05)](material/day9/) : Statistical Models and Bayesian Analysis 
 * [Day 10 (02/06)](material/day10/) : RNAseq analysis
-* [Day 11 (03/06)](material/day11/) : Distances & Dimension reduction using PCA
-* [Day 12 (04/06)](material/day12/) : Clustering and Machine Learning 
-* [Day 13 (05/06)](material/day13/) : **Exercises**:  Wrap-up and further practice on Day 8 - Day 12
+* [Day 11 (03/06)](material/day13/) : **Exercises**:  Wrap-up and further practice on  RNAseq analysis
+* Day 12 (04/06): Project
+* Day 13 (05/06) : Project
 
 
 ## Course Slack channel
@@ -28,7 +28,7 @@ All discussions, announcemnets and Q&A sessions of the course will be communicae
 
 ## Q&A Sessions
 Q&A Sessions will take place via Zoom every Monday and Thursday at 10am (duration: 30min - 1 hour). Details will be announced via Slack.
-**Note: The last Q&A session has been moved from June 4 to June 5 at 5 pm** 
+**Note: The last Q&A session on June 4 will start at 10:10am** 
 
 The first Q&A session on Monday May 18 will serve as an introduction to the course explaining:
 
