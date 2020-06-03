@@ -18,7 +18,7 @@ The course consists of 13 days plus a personal data analysis project, where each
 * [Day 8 (28/05)](material/day8/) : Multiple testing
 * [Day 9 (29/05)](material/day9/) : Statistical Models and Bayesian Analysis 
 * [Day 10 (02/06)](material/day10/) : RNAseq analysis
-* [Day 11 (03/06)](material/day13/) : **Exercises**:  Wrap-up and further practice on  RNAseq analysis
+* [Day 11 (03/06)](material/day11/) : **Exercises**:  Wrap-up and further practice on  RNAseq analysis
 * Day 12 (04/06): Project
 * Day 13 (05/06) : Project
 

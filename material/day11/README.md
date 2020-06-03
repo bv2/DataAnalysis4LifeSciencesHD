@@ -1,23 +1,8 @@
 # Day 11
 
-Today we will learn how to visualize and analyse a high-dimensional data set by finding a suitable low-dimensional representation of the data. For this we will again turn to the book *Data Analysis for the Life Sciences*. Please have a look at the following lectures and corresponding scripts from the book:
+Today we will repeat some concepts from the last days.
+For this go through the following exercise, which we will discuss in the Q&A tomorrow.
+If parts are unclear, take your time to go back to the chapters in the book that covered this part.
 
-- Introduction [lecture](https://www.youtube.com/watch?v=sBgMdGUTYWY)
-- Distance [lecture](https://www.youtube.com/watch?v=QYlggeDGLmc)  [script](http://genomicsclass.github.io/book/pages/distance.html)
-- Distance (in practice) [lecture](https://www.youtube.com/watch?v=B0MFoHr23u8)  [script](http://genomicsclass.github.io/book/pages/distance.html)
-- Distance Reduction Motivation [lecture](https://www.youtube.com/watch?v=uu964pCDGaw)  [script](http://genomicsclass.github.io/book/pages/distance.html)
-
-- SVD [lecture](https://www.youtube.com/watch?v=5K-h9eOilsg)  [script](http://genomicsclass.github.io/book/pages/svd.html)
-- Projections [lecture](https://www.youtube.com/watch?v=yPecNb3-UXw)  [script](http://genomicsclass.github.io/book/pages/projections.html)
-- Rotations [lecture](https://www.youtube.com/watch?v=QYbeZXKQsCc)  [script](http://genomicsclass.github.io/book/pages/rotations.html)
-
-- MDS [lecture](https://www.youtube.com/watch?v=RKncuSbrF_o)  [script](https://github.com/genomicsclass/labs/blob/master/highdim/mds.Rmd)
-- PCA [lecture](https://www.youtube.com/watch?v=-bbLn9tv7i8)  [script](http://genomicsclass.github.io/book/pages/pca_motivation.html)
-
-
-
-## Exercises (optional):
-
--   [Distance exercises](http://genomicsclass.github.io/book/pages/distance_exercises.html)
--   [SVD exercises](http://genomicsclass.github.io/book/pages/svd_exercises.html)
--   [MDS exercises](http://genomicsclass.github.io/book/pages/mds_exercises.html)
+Wrap-up exercise: [html](https://rawcdn.githack.com/bv2/DataAnalysis4LifeSciencesHD/b8cd0b85016ba34b8b84ca726b84c5fcd51f78d3/material/day13/Testing-and-RNAseq-Uni-HD-2020SS_Testing-and-RNAseq.html)
+[Rmd](Testing-and-RNAseq-noans.Rmd)
