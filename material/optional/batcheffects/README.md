@@ -3,7 +3,6 @@
 Today we will learn how to take care of confounding effects in the data, such as technical variation due to different batches.
 For this you can follow these lectures and corresponding scripts from the book:
 
-
 - Confounding [lecture](https://www.youtube.com/watch?v=aqUpNV8pgRs)  [script](http://genomicsclass.github.io/book/pages/confounding.html)
 - Confounding in Genomics [lecture](https://www.youtube.com/watch?v=f8IM3KfUCH0)  [script](http://genomicsclass.github.io/book/pages/confounding.html)
 - EDA with PCA [lecture](https://www.youtube.com/watch?v=4Gnxh5HgJlM)  [script](http://genomicsclass.github.io/book/pages/eda_with_pca.html)
