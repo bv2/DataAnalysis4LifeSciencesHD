@@ -1,6 +1,6 @@
 # Clustering
 
-Today we will learn about  methods.
+Today we will learn about  methods for clustering.
 For this you can follow these lectures and corresponding scripts from the book:
 
 - Clustering [lecture](https://www.youtube.com/watch?v=NqH8kUfsFGc)  [script](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html)

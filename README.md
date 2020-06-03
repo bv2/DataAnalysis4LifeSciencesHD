@@ -27,7 +27,7 @@ The course consists of 13 days plus a personal data analysis project, where each
 * [Dimension reduction](material/optional/SVD)
 * [Clustering](material/optional/clustering)
 * [Machine Learning](material/optional/ML)
-* [Batch effects](material/optional/bactheffects)
+* [Batch effects](material/optional/batcheffects)
 
 ## Course Slack channel
 All discussions, announcemnets and Q&A sessions of the course will be communicaed via a [Slack](https://slack.com) channel. This is also a place to discuss and exchange among participants. In case you are not yet in the Slack channel, please write an e-mail to Britta Velten `b.velten@dkfz-heidelberg.de`.
