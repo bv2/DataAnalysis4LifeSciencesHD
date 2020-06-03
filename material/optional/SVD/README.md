@@ -1,4 +1,4 @@
-# Day 11
+# Dimension reduction
 
 Today we will learn how to visualize and analyse a high-dimensional data set by finding a suitable low-dimensional representation of the data. For this we will again turn to the book *Data Analysis for the Life Sciences*. Please have a look at the following lectures and corresponding scripts from the book:
 
@@ -16,7 +16,7 @@ Today we will learn how to visualize and analyse a high-dimensional data set by 
 
 
 
-## Exercises (optional):
+## Exercises:
 
 -   [Distance exercises](http://genomicsclass.github.io/book/pages/distance_exercises.html)
 -   [SVD exercises](http://genomicsclass.github.io/book/pages/svd_exercises.html)
